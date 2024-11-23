@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.user-card__name {
+    margin: 10px 0;
+}
+
+.user-card__skills {
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+
+.user-card__description {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.user-card {
+    background-color: #353b48;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,0.75);
+    color: #b3b8cd;
+    padding-top: 30px;
+    width: 350px;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.user-card__availability {
+    color: #231e39;
+    background: red;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 3px 7px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.user-card__availability.online {
+    background: greenyellow;
+}
+
+.user-card__availability.offline {
+    background-color: #febb0b;
+}
+
+.user-card__avatar img {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.user-card__actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.user-card__button.primary {
+    background-color: #0984e3;
+    border: 1px solid #0984e3;
+    border-radius: 3px;
+    color : #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    padding: 10px 25px;
+}
+
+.user-card__button.primary.outline {
+    background-color: transparent;
+}
+
+.user-card__skills {
+    background-color: #2f3640;
+    text-align: left;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.user-card__skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user-card__skills ul li {
+    border: 1px solid #595180;
+    display: inline-block;
+    border-radius: 2px;
+    padding: 7px;
+    margin: 0 7px 7px 0;
+    font-size: 12px;
+}

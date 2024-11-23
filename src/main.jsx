@@ -1,9 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+
+import { UserCard } from './components/UserCard'
+import './style/UserCard.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <UserCard />
   </StrictMode>,
 )
